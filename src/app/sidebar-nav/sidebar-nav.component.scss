@@ -1,0 +1,47 @@
+@import '../../variabless';
+
+.leftblock{
+    background: $primary;
+    padding: 10px 0 10px 0;
+    .title{
+        font-size: 20px;
+        border-left:5px solid $secondary;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menu-block{
+        border-top: 1px solid $border-line;
+        padding: 10px 5px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 5px;
+                font-weight: 500;
+                a{
+                    display: block;
+                    padding: 5px 10px;
+                    .mat-icon{
+                        margin-right: 15px;
+                        vertical-align: text-top;
+                    }
+                    &.active{
+                        background: $secondary;
+                        border-radius: 5px;                        
+                        color: $primary;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        background: $secondary;
+                        border-radius: 5px;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+}

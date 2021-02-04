@@ -1,0 +1,66 @@
+@import '../../variabless';
+@import "../../mixins";
+
+.count-block{
+    float: left;
+    width: 98%;
+    margin-top: 20px;
+    margin-left: 15px;
+    .col-md-3{
+        padding-left: 0;
+    }
+    .box{
+        border-radius: 4px;
+        background: #fff;
+        padding: 15px;
+        .icons{
+            float: left;
+            padding: 0px 0 25px 0;
+            width: 100%;
+            text-align: right;
+            .mat-icon{
+                color: $secondary;
+            }
+        }
+        .counts{
+            font-size: 30px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .label{
+            font-size: 18px;
+            color: $title-color;
+        }
+    }
+}
+.recent-blogs{
+    @include box;
+    margin-bottom: 100px;
+    .heading{
+        @include title; 
+        border-bottom: 1px solid $border-line;
+    }
+    .content-section{
+        padding: 20px;
+        .box{
+          .image{
+            padding-top: 10px;
+            img{
+                border-radius: 5px;
+            }
+          }
+          .caption{
+              font-weight: bold;
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+          .descprions{
+              line-height: 19px;
+          } 
+        }
+    } 
+}
+.mat-icon{
+    margin-right: 10px;
+    margin-left: 3px;
+}

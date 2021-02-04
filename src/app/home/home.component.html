@@ -1,0 +1,56 @@
+<div class="content-area">
+    <div class="breadcrumb-block">
+        <div class="headding">
+            <mat-icon>storage</mat-icon>  Home
+        </div>
+        <div class="page-description">
+            Home Page Description
+        </div>
+    </div>
+    
+    <!-- Updating API Response Data -->
+    <div class="count-block">
+        <div class="row">
+            <div class="col-md-3" *ngFor="let data of listData.lists">
+                <div class="box">
+                    <div class="icons">
+                        <mat-icon>shopping_cart</mat-icon>
+                    </div>
+                    <div class="counts">
+                        {{data.count}}
+                    </div>
+                    <div class="label">
+                        {{data.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Updating API Response Data into Recent Blogs -->
+    <div class="recent-blogs">
+        <div class="heading">
+                <mat-icon>storage</mat-icon>  Recen Blogs
+        </div>
+        <div class="content-section">
+            <div class="row">
+                <div class="col-md-3 box" *ngFor="let data of blogData.blogs">
+                    <div class="image">
+                        <img src="../assets/images/pipe-line.jpg" alt="blog">
+                    </div>
+                    <div class="caption">
+                        {{data.title}}
+                    </div>
+                    <div class="descprions">
+                        {{data.des}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

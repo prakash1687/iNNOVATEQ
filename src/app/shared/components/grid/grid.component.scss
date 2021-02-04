@@ -1,0 +1,73 @@
+@import '../../../../variabless';
+
+
+.tabel-row{
+    background: $primary;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    table{
+        width: 100%;
+        tr:nth-child(even) {
+            background: #f1f1f1;
+            padding: 10px;
+            border-bottom:1px solid $border-line;
+        }
+        tr:nth-child(odd) {
+            background: $primary;
+            padding: 10px;
+            border-bottom:1px solid $border-line;
+        }
+        td{
+            padding: 5px;
+            strong{
+                color: $secondary;
+            }
+            img{
+                height: 60px;
+                border-radius: 30px;
+                border: 3px solid $secondary;
+            }
+        }
+    }
+}
+
+.mat-table{
+    .mat-header-row{
+        th{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    tr:nth-child(even) {
+        background: #f1f1f1;
+        padding: 10px;
+        border-bottom:1px solid $border-line;
+    }
+    tr:nth-child(odd) {
+        background: $primary;
+        padding: 10px;
+        border-bottom:1px solid $border-line;
+    }
+    .cdk-row{
+        .cdk-column-name{
+            font-size:16px;
+            color: $secondary;
+            font-weight: bold; 
+            img{
+                height: 60px !important;
+                border-radius: 30px !important;
+                border: 3px solid #47a1f6 !important;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }

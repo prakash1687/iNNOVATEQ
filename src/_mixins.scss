@@ -1,0 +1,16 @@
+@mixin box {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    @include rowsection
+}
+@mixin title {
+    color: $title-color;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+@mixin rowsection{
+    float: left;
+    width: 100%;
+}

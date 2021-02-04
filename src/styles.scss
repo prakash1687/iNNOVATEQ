@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import './variabless';
+@import "./mixins";
+
+body{
+    background: #f0f5fb !important;
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content-area{
+    .breadcrumb-block{
+        @include box;
+        padding-bottom: 10px;
+        @include rowsection;
+        .headding{
+            @include rowsection;
+            @include title; 
+            .mat-icon{
+                width: 18px !important;
+                height: 18px !important;
+                vertical-align: text-top;
+                margin-right: 10px;
+            }
+        }
+        .page-description{
+            @include rowsection;
+            border: 1px solid $border-line;
+            padding: 5px 15px 5px 20px;
+            background: $color-back;
+            font-size: 12px;
+
+        }
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
